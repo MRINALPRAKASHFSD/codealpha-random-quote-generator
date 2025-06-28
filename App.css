@@ -1,0 +1,82 @@
+/* src/App.css */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.quote-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quote-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13), 0 1.5px 5px rgba(0,0,0,0.06);
+  padding: 2.5rem 2.2rem;
+  max-width: 420px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 32px;
+  animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+blockquote {
+  font-size: 1.35rem;
+  color: #333;
+  margin: 0 0 1.2rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 2.1rem;
+  color: #ffd200;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
+.author {
+  font-weight: 600;
+  color: #f7971e;
+  font-size: 1.05rem;
+  margin: 0 0 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+.new-quote-btn {
+  background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.07rem;
+  padding: 0.7rem 1.7rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(247,151,30,0.09);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.new-quote-btn:hover {
+  background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+footer {
+  color: #fff;
+  letter-spacing: 0.08em;
+  font-size: 0.98rem;
+  opacity: 0.83;
+  margin-top: 1rem;
+}
